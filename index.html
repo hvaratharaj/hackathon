@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="/static/css/style.css" type="text/css">
+<head>
+    <meta charset="UTF-8">
+ <style>
+         body {
+            background-image: url("/static/css/zuora_office1.jpg")
+        }   
+</style>
+</head>
+
+    
+<!-- title -->
+    <h1>
+    <span>Z-Hackathon</span>
+        <!--  -->
+        <!-- <span>L</span>ogin
+        <span>F</span>orm</h1> -->
+    <!-- //title -->
+    <!-- content -->
+	
+    <div class="sub-main-w3">
+        <form action="/submit" method="post">
+            <div class="form-style-agile">
+                <!-- <label>
+                    Username
+                    <i class="fas fa-user"></i>
+                </label> -->
+                <input placeholder="Username" name="Name" type="text" required="">
+            </div>
+            <div class="form-style-agile">
+                <!-- <label>
+                    Password
+                    <i class="fas fa-unlock-alt"></i>
+                </label> -->
+                <input placeholder="Password" name="name" type="text" required="">
+            </div>
+            <!-- checkbox -->
+            <div class="wthree-text">
+                <ul>
+                    <li>
+                        <label class="anim">
+                            <!-- <input type="checkbox" class="checkbox" required="">-->
+                            <span>choose a input file to predict</span>
+                        </label>
+                    </li>
+                    <!-- <li>
+                        <a href="#">Forgot Password?</a>
+                    </li> -->
+                </ul>
+            </div>
+            
+            <!-- File Upload -->
+            <div class="File upload">
+            <input type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".csv,.txt">
+			<!-- //checkbox -->
+            <input type="submit" value="submit">
+        </div>
